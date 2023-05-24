@@ -6,8 +6,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
-    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css?_v=20230524201429"/>
+    <link rel="stylesheet" href="css/style.min.css?_v=20230524201429">
     <title>Главная</title>
 </head>
 
@@ -19,32 +19,30 @@
                     <div class="stories__row stories-swiper">
                         <div id="stories-item" class="stories__item">
                             <div id="timer"></div>
-                            <video 
-                                class="stories__video" src="files/video/bg.webm" 
-                                muted 
-                                autoplay="true">
+                            <video id="plur-player" class="stories__video" muted autoplay="true">
+                                <source src="files/video/bg.webm" type="video/webm">
                             </video>
                             <h3 class="stories__title">Наше дело не так однозначно, как может</h3>
                             <button class="stories__watch">Смотреть ></button>
                         </div>
                         <div id="stories-item" class="stories__item">
-                            <img class="stories__bg" src="img/stories/2.png" alt="">
+                            <picture><source srcset="img/stories/2.webp" type="image/webp"><img class="stories__bg" src="img/stories/2.png" alt=""></picture>
                             <h3 class="stories__title">Наше дело не так однозначно, как может</h3>
                             <button class="stories__watch">Смотреть ></button>
                         </div>
                         <div id="stories-item" class="stories__item">
-                            <img class="stories__bg" src="img/stories/3.png" alt="">
+                            <picture><source srcset="img/stories/3.webp" type="image/webp"><img class="stories__bg" src="img/stories/3.png" alt=""></picture>
                             <h3 class="stories__title">Банальные, но неопровержимые</h3>
                             <button class="stories__watch">Смотреть ></button>
                         </div>
                         <div id="stories-item" class="stories__item">
-                            <img class="stories__bg" src="img/stories/4.png" alt="">
+                            <picture><source srcset="img/stories/4.webp" type="image/webp"><img class="stories__bg" src="img/stories/4.png" alt=""></picture>
                             <h3 class="stories__title">Имеется спорная точка зрения, гласящая</h3>
 
                             <button class="stories__watch">Смотреть ></button>
                         </div>
                         <div id="stories-item" class="stories__item">
-                            <img class="stories__bg" src="img/stories/5.png" alt="">
+                            <picture><source srcset="img/stories/5.webp" type="image/webp"><img class="stories__bg" src="img/stories/5.png" alt=""></picture>
                             <h3 class="stories__title">И нет сомнений, что предприниматели в</h3>
                             <button class="stories__watch">Смотреть ></button>
                         </div>
@@ -66,9 +64,10 @@
             </div>
         </main>
     </div>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-    <script src="js/app.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js?_v=20230524201429"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js?_v=20230524201429"></script>
+    <script src="https://cdn.plyr.io/3.6.3/plyr.js?_v=20230524201429"></script>
+    <script src="js/app.min.js?_v=20230524201429"></script>
 </body>
 
 </html>
