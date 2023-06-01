@@ -6,8 +6,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css?_v=20230525172056"/>
-    <link rel="stylesheet" href="css/style.min.css?_v=20230525172056">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css?_v=20230601211734"/>
+    <link rel="stylesheet" href="css/style.min.css?_v=20230601211734">
     <title>Главная</title>
 </head>
 
@@ -16,222 +16,147 @@
         <main class="content">
             <section class="stories">
                 <div class="container">
-                    <div class="stories__row stories-swiper">
-                        <div id="stories-item" class="stories__item">
-                            <div id="timer"></div>
-                            <video id="plur-player" class="stories__video" mutedf>
+                    <div class="stories-collections stories-swiper">
+                        <div id="stories-item" class="stories-collection">
+                            <div id="stories-collection__timer"></div>
+                            <video id="plur-player" class="stories-collection__video" muted playsinline autoplay>
                                 <source src="files/video/bg.webm" type="video/webm">
                             </video>
-                            <h3 class="stories__title">Наше дело не так однозначно, как может</h3>
-                            <button class="stories__watch">Смотреть ></button>
-                            <div class="hidden-stories">
-                                <h4 class="stories__subtitle">Очки виртуальной реальности HIPER VR Max, черный</h4>
-                                
-                                <div class="products-slider__item">
-                                    <h5 class="products-slider__title">Очки виртуальной реальности HIPER VR Max, черный </h5>
-                                    <p class="products-slider__old">4 290 ₽</p>
-                                    <p class="products-slider__new">3 940 ₽</p>
-                                    <picture><source srcset="../img/product-slider/1.webp" type="image/webp"><img src="../img/product-slider/1.png"></picture></img>
+                            <h3 class="stories-collection__title">Наше дело не так однозначно, как может</h3>
+                            <button class="stories-collection__watch-btn">Смотреть ></button>
+                            <!--сторисы папки-->
+                            <div class="stories-collection__stories">
+                                <div class="stories-story">
+                                    <h4 class="stories-story__title">Заголовок сторис</h4>
+                                    <div class="stories-story__text">Очки виртуальной реальности HIPER VR Max, черный</div>
+                                    <div class="stories-story__product-slider">
+                                        <div class="stories-story__product-slide">
+                                            <h5 class="stories-story__product-slide__title">Очки виртуальной реальности HIPER VR Max, черный </h5>
+                                            <p class="stories-story__product-slide__price-old">4 290 ₽</p>
+                                            <p class="stories-story__product-slide__price-new">3 940 ₽</p>
+                                            <picture class="stories-story__product-slide__image">
+                                                <source srcset="../img/product-slider/1.webp" type="image/webp"><img src="../img/product-slider/1.png">
+                                            </picture>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="products-slider__item">
-                                    <h5 class="products-slider__title">Очки виртуальной реальности HIPER VR Max, черный </h5>
-                                    <p class="products-slider__old">4 290 ₽</p>
-                                    <p class="products-slider__new">3 940 ₽</p>
-                                    <picture><source srcset="../img/product-slider/1.webp" type="image/webp"><img src="../img/product-slider/1.png"></picture></img>
-                                </div>
-                                <div class="products-slider__item">
-                                    <h5 class="products-slider__title">Очки виртуальной реальности HIPER VR Max, черный </h5>
-                                    <p class="products-slider__old">4 290 ₽</p>
-                                    <p class="products-slider__new">3 940 ₽</p>
-                                    <picture><source srcset="../img/product-slider/1.webp" type="image/webp"><img src="../img/product-slider/1.png"></picture></img>
-                                </div>
-                                <div class="products-slider__item">
-                                    <h5 class="products-slider__title">Очки виртуальной реальности HIPER VR Max, черный </h5>
-                                    <p class="products-slider__old">4 290 ₽</p>
-                                    <p class="products-slider__new">3 940 ₽</p>
-                                    <picture><source srcset="../img/product-slider/1.webp" type="image/webp"><img src="../img/product-slider/1.png"></picture></img>
-                                </div>
-                                <div class="products-slider__item">
-                                    <h5 class="products-slider__title">Очки виртуальной реальности HIPER VR Max, черный </h5>
-                                    <p class="products-slider__old">4 290 ₽</p>
-                                    <p class="products-slider__new">3 940 ₽</p>
-                                    <picture><source srcset="../img/product-slider/1.webp" type="image/webp"><img src="../img/product-slider/1.png"></picture></img>
-                                </div>
-                                <div class="products-slider__item">
-                                    <h5 class="products-slider__title">Очки виртуальной реальности HIPER VR Max, черный </h5>
-                                    <p class="products-slider__old">4 290 ₽</p>
-                                    <p class="products-slider__new">3 940 ₽</p>
-                                    <picture><source srcset="../img/product-slider/1.webp" type="image/webp"><img src="../img/product-slider/1.png"></picture></img>
+                            </div>
+                            <!--/сторисы папки-->
+                        </div>
+                        <div id="stories-item" class="stories-collection">
+                            <picture><source srcset="img/stories/2.webp" type="image/webp"><img class="stories-collection__image" src="img/stories/2.png" alt=""></picture>
+                            <h3 class="stories-collection__title">Наше дело не так однозначно, как может</h3>
+                            <button class="stories-collection__watch-btn">Смотреть ></button>
+                            <div class="stories-collection__stories">
+                                <div class="stories-story">
+                                    <h4 class="stories-story__title">Заголовок сторис</h4>
+                                    <div class="stories-story__text">Очки виртуальной реальности HIPER VR Max, черный</div>
+                                    <div class="stories-story__product-slider">
+                                        <div class="stories-story__product-slide">
+                                            <h5 class="stories-story__product-slide__title">Очки виртуальной реальности HIPER VR Max, черный </h5>
+                                            <p class="stories-story__product-slide__price-old">4 290 ₽</p>
+                                            <p class="stories-story__product-slide__price-new">3 940 ₽</p>
+                                            <picture class="stories-story__product-slide__image">
+                                                <source srcset="../img/product-slider/1.webp" type="image/webp"><img src="../img/product-slider/1.png">
+                                            </picture>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <div id="stories-item" class="stories__item">
-                            <picture><source srcset="img/stories/2.webp" type="image/webp"><img class="stories__bg" src="img/stories/2.png" alt=""></picture>
-                            <h3 class="stories__title">Наше дело не так однозначно, как может</h3>
-                            <button class="stories__watch">Смотреть ></button>
-                            <div class="hidden-stories">
-                                <h4 class="stories__subtitle">Очки виртуальной реальности HIPER VR Max, черный</h4>
-    
-                            </div>
-                        </div>
-                        <div id="stories-item" class="stories__item">
-                            <picture><source srcset="img/stories/3.webp" type="image/webp"><img class="stories__bg" src="img/stories/3.png" alt=""></picture>
-                            <h3 class="stories__title">Банальные, но неопровержимые</h3>
-                            <button class="stories__watch">Смотреть ></button>
-                            <div class="hidden-stories">
-                                <h4 class="stories__subtitle">Очки виртуальной реальности HIPER VR Max, черный</h4>
-                                
-                                <div class="products-slider__item">
-                                    <h5 class="products-slider__title">Очки виртуальной реальности HIPER VR Max, черный </h5>
-                                    <p class="products-slider__old">4 290 ₽</p>
-                                    <p class="products-slider__new">3 940 ₽</p>
-                                    <picture><source srcset="../img/product-slider/1.webp" type="image/webp"><img src="../img/product-slider/1.png"></picture></img>
-                                </div>
-                                <div class="products-slider__item">
-                                    <h5 class="products-slider__title">Очки виртуальной реальности HIPER VR Max, черный </h5>
-                                    <p class="products-slider__old">4 290 ₽</p>
-                                    <p class="products-slider__new">3 940 ₽</p>
-                                    <picture><source srcset="../img/product-slider/1.webp" type="image/webp"><img src="../img/product-slider/1.png"></picture></img>
-                                </div>
-                                <div class="products-slider__item">
-                                    <h5 class="products-slider__title">Очки виртуальной реальности HIPER VR Max, черный </h5>
-                                    <p class="products-slider__old">4 290 ₽</p>
-                                    <p class="products-slider__new">3 940 ₽</p>
-                                    <picture><source srcset="../img/product-slider/1.webp" type="image/webp"><img src="../img/product-slider/1.png"></picture></img>
-                                </div>
-                                <div class="products-slider__item">
-                                    <h5 class="products-slider__title">Очки виртуальной реальности HIPER VR Max, черный </h5>
-                                    <p class="products-slider__old">4 290 ₽</p>
-                                    <p class="products-slider__new">3 940 ₽</p>
-                                    <picture><source srcset="../img/product-slider/1.webp" type="image/webp"><img src="../img/product-slider/1.png"></picture></img>
-                                </div>
-                                <div class="products-slider__item">
-                                    <h5 class="products-slider__title">Очки виртуальной реальности HIPER VR Max, черный </h5>
-                                    <p class="products-slider__old">4 290 ₽</p>
-                                    <p class="products-slider__new">3 940 ₽</p>
-                                    <picture><source srcset="../img/product-slider/1.webp" type="image/webp"><img src="../img/product-slider/1.png"></picture></img>
-                                </div>
-                                <div class="products-slider__item">
-                                    <h5 class="products-slider__title">Очки виртуальной реальности HIPER VR Max, черный </h5>
-                                    <p class="products-slider__old">4 290 ₽</p>
-                                    <p class="products-slider__new">3 940 ₽</p>
-                                    <picture><source srcset="../img/product-slider/1.webp" type="image/webp"><img src="../img/product-slider/1.png"></picture></img>
+                        <div id="stories-item" class="stories-collection">
+                            <picture><source srcset="img/stories/3.webp" type="image/webp"><img class="stories-collection__image" src="img/stories/3.png" alt=""></picture>
+                            <h3 class="stories-collection__title">Банальные, но неопровержимые</h3>
+                            <button class="stories-collection__watch-btn">Смотреть ></button>
+                            <!--сторисы папки-->
+                            <div class="stories-collection__stories">
+                                <div class="stories-story">
+                                    <h4 class="stories-story__title">Заголовок сторис</h4>
+                                    <div class="stories-story__text">Очки виртуальной реальности HIPER VR Max, черный</div>
+                                    <div class="stories-story__product-slider">
+                                        <div class="stories-story__product-slide">
+                                            <h5 class="stories-story__product-slide__title">Очки виртуальной реальности HIPER VR Max, черный </h5>
+                                            <p class="stories-story__product-slide__price-old">4 290 ₽</p>
+                                            <p class="stories-story__product-slide__price-new">3 940 ₽</p>
+                                            <picture class="stories-story__product-slide__image">
+                                                <source srcset="../img/product-slider/1.webp" type="image/webp"><img src="../img/product-slider/1.png">
+                                            </picture>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
+                            <!--/сторисы папки-->
                         </div>
-                        <div id="stories-item" class="stories__item">
-                            <picture><source srcset="img/stories/4.webp" type="image/webp"><img class="stories__bg" src="img/stories/4.png" alt=""></picture>
-                            <h3 class="stories__title">Имеется спорная точка зрения, гласящая</h3>
+                        <div id="stories-item" class="stories-collection">
+                            <picture><source srcset="img/stories/4.webp" type="image/webp"><img class="stories-collection__image" src="img/stories/4.png" alt=""></picture>
+                            <h3 class="stories-collection__title">Имеется спорная точка зрения, гласящая</h3>
 
-                            <button class="stories__watch">Смотреть ></button>
-                            <div class="hidden-stories">
-                                <h4 class="stories__subtitle">Очки виртуальной реальности HIPER VR Max, черный</h4>
-                                
-                                <div class="products-slider__item">
-                                    <h5 class="products-slider__title">Очки виртуальной реальности HIPER VR Max, черный </h5>
-                                    <p class="products-slider__old">4 290 ₽</p>
-                                    <p class="products-slider__new">3 940 ₽</p>
-                                    <picture><source srcset="../img/product-slider/1.webp" type="image/webp"><img src="../img/product-slider/1.png"></picture></img>
-                                </div>
-                                <div class="products-slider__item">
-                                    <h5 class="products-slider__title">Очки виртуальной реальности HIPER VR Max, черный </h5>
-                                    <p class="products-slider__old">4 290 ₽</p>
-                                    <p class="products-slider__new">3 940 ₽</p>
-                                    <picture><source srcset="../img/product-slider/1.webp" type="image/webp"><img src="../img/product-slider/1.png"></picture></img>
-                                </div>
-                                <div class="products-slider__item">
-                                    <h5 class="products-slider__title">Очки виртуальной реальности HIPER VR Max, черный </h5>
-                                    <p class="products-slider__old">4 290 ₽</p>
-                                    <p class="products-slider__new">3 940 ₽</p>
-                                    <picture><source srcset="../img/product-slider/1.webp" type="image/webp"><img src="../img/product-slider/1.png"></picture></img>
-                                </div>
-                                <div class="products-slider__item">
-                                    <h5 class="products-slider__title">Очки виртуальной реальности HIPER VR Max, черный </h5>
-                                    <p class="products-slider__old">4 290 ₽</p>
-                                    <p class="products-slider__new">3 940 ₽</p>
-                                    <picture><source srcset="../img/product-slider/1.webp" type="image/webp"><img src="../img/product-slider/1.png"></picture></img>
-                                </div>
-                                <div class="products-slider__item">
-                                    <h5 class="products-slider__title">Очки виртуальной реальности HIPER VR Max, черный </h5>
-                                    <p class="products-slider__old">4 290 ₽</p>
-                                    <p class="products-slider__new">3 940 ₽</p>
-                                    <picture><source srcset="../img/product-slider/1.webp" type="image/webp"><img src="../img/product-slider/1.png"></picture></img>
-                                </div>
-                                <div class="products-slider__item">
-                                    <h5 class="products-slider__title">Очки виртуальной реальности HIPER VR Max, черный </h5>
-                                    <p class="products-slider__old">4 290 ₽</p>
-                                    <p class="products-slider__new">3 940 ₽</p>
-                                    <picture><source srcset="../img/product-slider/1.webp" type="image/webp"><img src="../img/product-slider/1.png"></picture></img>
+                            <button class="stories-collection__watch-btn">Смотреть ></button>
+                            <!--сторисы папки-->
+                            <div class="stories-collection__stories">
+                                <div class="stories-story">
+                                    <h4 class="stories-story__title">Заголовок сторис</h4>
+                                    <div class="stories-story__text">Очки виртуальной реальности HIPER VR Max, черный</div>
+                                    <div class="stories-story__product-slider">
+                                        <div class="stories-story__product-slide">
+                                            <h5 class="stories-story__product-slide__title">Очки виртуальной реальности HIPER VR Max, черный </h5>
+                                            <p class="stories-story__product-slide__price-old">4 290 ₽</p>
+                                            <p class="stories-story__product-slide__price-new">3 940 ₽</p>
+                                            <picture class="stories-story__product-slide__image">
+                                                <source srcset="../img/product-slider/1.webp" type="image/webp"><img src="../img/product-slider/1.png">
+                                            </picture>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
+                            <!--/сторисы папки-->
                         </div>
-                        <div id="stories-item" class="stories__item">
-                            <picture><source srcset="img/stories/5.webp" type="image/webp"><img class="stories__bg" src="img/stories/5.png" alt=""></picture>
-                            <h3 class="stories__title">И нет сомнений, что предприниматели в</h3>
-                            <button class="stories__watch">Смотреть ></button>
-                            <div class="hidden-stories">
-                                <h4 class="stories__subtitle">Очки виртуальной реальности HIPER VR Max, черный</h4>
-                                
-                                <div class="products-slider__item">
-                                    <h5 class="products-slider__title">Очки виртуальной реальности HIPER VR Max, черный </h5>
-                                    <p class="products-slider__old">4 290 ₽</p>
-                                    <p class="products-slider__new">3 940 ₽</p>
-                                    <picture><source srcset="../img/product-slider/1.webp" type="image/webp"><img src="../img/product-slider/1.png"></picture></img>
-                                </div>
-                                <div class="products-slider__item">
-                                    <h5 class="products-slider__title">Очки виртуальной реальности HIPER VR Max, черный </h5>
-                                    <p class="products-slider__old">4 290 ₽</p>
-                                    <p class="products-slider__new">3 940 ₽</p>
-                                    <picture><source srcset="../img/product-slider/1.webp" type="image/webp"><img src="../img/product-slider/1.png"></picture></img>
-                                </div>
-                                <div class="products-slider__item">
-                                    <h5 class="products-slider__title">Очки виртуальной реальности HIPER VR Max, черный </h5>
-                                    <p class="products-slider__old">4 290 ₽</p>
-                                    <p class="products-slider__new">3 940 ₽</p>
-                                    <picture><source srcset="../img/product-slider/1.webp" type="image/webp"><img src="../img/product-slider/1.png"></picture></img>
-                                </div>
-                                <div class="products-slider__item">
-                                    <h5 class="products-slider__title">Очки виртуальной реальности HIPER VR Max, черный </h5>
-                                    <p class="products-slider__old">4 290 ₽</p>
-                                    <p class="products-slider__new">3 940 ₽</p>
-                                    <picture><source srcset="../img/product-slider/1.webp" type="image/webp"><img src="../img/product-slider/1.png"></picture></img>
-                                </div>
-                                <div class="products-slider__item">
-                                    <h5 class="products-slider__title">Очки виртуальной реальности HIPER VR Max, черный </h5>
-                                    <p class="products-slider__old">4 290 ₽</p>
-                                    <p class="products-slider__new">3 940 ₽</p>
-                                    <picture><source srcset="../img/product-slider/1.webp" type="image/webp"><img src="../img/product-slider/1.png"></picture></img>
-                                </div>
-                                <div class="products-slider__item">
-                                    <h5 class="products-slider__title">Очки виртуальной реальности HIPER VR Max, черный </h5>
-                                    <p class="products-slider__old">4 290 ₽</p>
-                                    <p class="products-slider__new">3 940 ₽</p>
-                                    <picture><source srcset="../img/product-slider/1.webp" type="image/webp"><img src="../img/product-slider/1.png"></picture></img>
+                        <div id="stories-item" class="stories-collection">
+                            <picture><source srcset="img/stories/5.webp" type="image/webp"><img class="stories-collection__image" src="img/stories/5.png" alt=""></picture>
+                            <h3 class="stories-collection__title">И нет сомнений, что предприниматели в</h3>
+                            <button class="stories-collection__watch-btn">Смотреть ></button>
+                            <!--сторисы папки-->
+                            <div class="stories-collection__stories">
+                                <div class="stories-story">
+                                    <h4 class="stories-story__title">Заголовок сторис</h4>
+                                    <div class="stories-story__text">Очки виртуальной реальности HIPER VR Max, черный</div>
+                                    <div class="stories-story__product-slider">
+                                        <div class="stories-story__product-slide">
+                                            <h5 class="stories-story__product-slide__title">Очки виртуальной реальности HIPER VR Max, черный </h5>
+                                            <p class="stories-story__product-slide__price-old">4 290 ₽</p>
+                                            <p class="stories-story__product-slide__price-new">3 940 ₽</p>
+                                            <picture class="stories-story__product-slide__image">
+                                                <source srcset="../img/product-slider/1.webp" type="image/webp"><img src="../img/product-slider/1.png">
+                                            </picture>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
+                            <!--/сторисы папки-->
                         </div>
+
                     </div>
                 </div>
             </section>
-            <div id="slider-stories" class='slider-stories'>
-                <div data-slide="slide" class="slide">
-                    <div id='stories-items' class="slide-items">
+            <div id="stories-slider__controls" class='stories-slider__controls'>
+                <div data-slide="stories-slider__slide" class="stories-slider__slide">
+                    <div id='stories-slider__slide-items' class="stories-slider__slide-items">
                     </div>
-                    <nav class="slide-nav">
-                        <div class="slide-thumb"></div>
-                        <button class="slide-prev"></button>
-                        <button class="slide-next"></button>
+                    <nav class="stories-slider__slide-nav">
+                        <div class="stories-slider__slide-thumb"></div>
+                        <button class="stories-slider__slide-prev"></button>
+                        <button class="stories-slider__slide-next"></button>
                     </nav>
-                    <button class="slide-arrow-prev"><img src="img/svgicons/prev.svg" alt=""></button>
-                    <button class="slide-arrow-next"><img src="img/svgicons/next.svg" alt=""></button>
+                    <button class="stories-slider__slide-arrow-prev"><img src="img/svgicons/prev.svg" alt=""></button>
+                    <button class="stories-slider__slide-arrow-next"><img src="img/svgicons/next.svg" alt=""></button>
                 </div>
             </div>
         </main>
     </div>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js?_v=20230525172056"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js?_v=20230525172056"></script>
-    <script src="https://cdn.plyr.io/3.6.3/plyr.js?_v=20230525172056"></script>
-    <script src="js/app.min.js?_v=20230525172056"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js?_v=20230601211734"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js?_v=20230601211734"></script>
+    <script src="https://cdn.plyr.io/3.6.3/plyr.js?_v=20230601211734"></script>
+    <script src="js/app.min.js?_v=20230601211734"></script>
 </body>
 
 </html>
