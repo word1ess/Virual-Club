@@ -6,8 +6,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css?_v=20230602202841"/>
-    <link rel="stylesheet" href="css/style.min.css?_v=20230602202841">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css?_v=20230605185402"/>
+    <link rel="stylesheet" href="https://virtuality.club/catalog/view/theme/virtuality/stylesheet/main.css?v=1684495982&_v=20230605185402">
+    <link rel="stylesheet" href="css/null.css?_v=20230605185402">
+    <link rel="stylesheet" href="css/fonts.css?_v=20230605185402">
+    <link rel="stylesheet" href="css/style.css?_v=20230605185402">
     <title>Главная</title>
 </head>
 
@@ -16,7 +19,7 @@
         <main class="content">
             <section class="stories">
                 <div class="container">
-                    <div class="stories-collections stories-swiper">
+                    <div class="stories-collections js-products-cards-slider">
                         <div class="stories-collection js-stories-collection">
                             <div id="js-stories-collection__timer" class="stories-collection__timer"></div>
                             <video muted playsinline autoplay id="plur-player" class="stories-collection__video js-stories-collection__video">
@@ -98,7 +101,7 @@
                             </div>
                             <!--/сторисы папки-->
                         </div>
-                        <div  class="stories-collection js-stories-collection">
+                        <div class="stories-collection js-stories-collection">
                             <picture><source srcset="img/stories/3.webp" type="image/webp"><img class="stories-collection__image" src="img/stories/3.png" alt=""></picture>
                             <h3 class="stories-collection__title">Банальные, но неопровержимые</h3>
                             <button class="stories-collection__watch-btn">Смотреть ></button>
@@ -147,7 +150,7 @@
                                 <div class="stories-story">
                                     <h4 class="stories-story__title js-stories-story__title">Заголовок сторис</h4>
                                     <div class="stories-story__text js-stories-story__text">Очки виртуальной реальности HIPER VR Max, черный</div>
-                                    <div class="stories-story__product-slider">
+                                    <!-- <div class="stories-story__product-slider">
                                         <div class= "stories-story__product-slide js-stories-story__product-slide">
                                             <h5 class="stories-story__product-slide__title">Очки виртуальной реальности HIPER VR Max, черный </h5>
                                             <p class="stories-story__product-slide__price-old">4 290 ₽</p>
@@ -172,7 +175,7 @@
                                                 <source srcset="../img/product-slider/1.webp" type="image/webp"><img src="../img/product-slider/1.png">
                                             </picture>
                                         </div>
-                                    </div>
+                                    </div> -->
                                 </div>
                             </div>
                             <!--/сторисы папки-->
@@ -216,7 +219,22 @@
                             </div>
                             <!--/сторисы папки-->
                         </div>
-
+                    </div>
+                    <div class="slider-controls">
+                        <div class="slider-navigation">
+                            <button class="slider-navigation__btn slider-navigation__btn--prev js-products-cards-slider-btn-prev b-radius-7 slick-arrow" type="button" style="display: block;">
+                                <svg viewBox="0 0 11 8" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M0.25 3.17578H8.50781L6.42969 1.07031L7.25 0.25L10.75 3.75L7.25 7.25L6.42969 6.42969L8.50781 4.32422H0.25V3.17578Z"></path>
+                                </svg>
+                            </button>
+                            <button class="slider-navigation__btn slider-navigation__btn--next js-products-cards-slider-btn-next b-radius-7 slick-arrow" type="button" style="display: block;">
+                                <svg viewBox="0 0 11 8" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M0.25 3.17578H8.50781L6.42969 1.07031L7.25 0.25L10.75 3.75L7.25 7.25L6.42969 6.42969L8.50781 4.32422H0.25V3.17578Z"></path>
+                                </svg>
+                            </button>
+                        </div>
+        
+                        <div class="slider-pagination js-products-cards-slider-pagination"><ul class="slick-dots" style="display: block;" role="tablist"><li class="slick-active" role="presentation"><button type="button" role="tab" id="slick-slide-control120" aria-controls="slick-slide120" aria-label="1 of 3" tabindex="0" aria-selected="true">1</button></li><li role="presentation"><button type="button" role="tab" id="slick-slide-control121" aria-controls="slick-slide125" aria-label="2 of 3" tabindex="-1">2</button></li><li role="presentation"><button type="button" role="tab" id="slick-slide-control122" aria-controls="slick-slide1210" aria-label="3 of 3" tabindex="-1">3</button></li></ul></div>
                     </div>
                 </div>
             </section>
@@ -235,10 +253,11 @@
             </div>
         </main>
     </div>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js?_v=20230602202841"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js?_v=20230602202841"></script>
-    <script src="https://cdn.plyr.io/3.6.3/plyr.js?_v=20230602202841"></script>
-    <script src="js/app.min.js?_v=20230602202841"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.9.0/slick/slick.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="https://cdn.plyr.io/3.6.3/plyr.js"></script>
+    <script src="js/app.min.js"></script>
 </body>
 
 </html>
